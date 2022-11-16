@@ -1,57 +1,83 @@
 import React from "react";
+import {IoIosArrowDropright as ArrowIcon} from "react-icons/io"
 
 const SearchBar = () => {
   return (
-    <div className="bg-[#3A8891] flex justify-center items-center">
-      <div className="flex flex-col">
-        <div className="flex">
-          <div>
+    <div className="bg-[#3A8891] text-white w-full flex justify-center items-center py-6 px-10 flex-col lg:flex-row">
+      <div className="flex flex-col md:mr-10">
+        <div className="flex items-center md:items-end flex-col md:flex-row ">
+          <div className="mb-3 md:mr-10 w-screen md:w-fit px-5 md:px-0">
             <p>Nama</p>
             <input
               type="text"
               placeholder="Insert Pokemon Name"
-              className="bg-white"
+              className="bg-white text-black w-full md:w-[200px] rounded-md h-9 px-3"
             />
           </div>
-          <div>
+          <div className="w-screen md:w-[200px] px-5 md:px-0">
             <select
               name="generation"
               id="generation"
-              className="bg-white text-black"
+              className="bg-white text-black rounded-md h-9 px-3 mb-3  md:mr-10 w-full"
             >
+              <option value="" disabled selected>Generation Type</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
           </div>
-          <div>
-            <select name="growth" id="growth" className="bg-white text-black">
-              <option value="10">10%</option>
-              <option value="20">20%</option>
-              <option value="30">30%</option>
+          <div className="w-screen md:w-[200px] px-5 md:px-0 md:ml-10">
+            <select
+              name="growth"
+              id="growth"
+              className="bg-white text-black rounded-md h-9 px-3 mb-3  md:mr-10 w-full"
+            >
+              <option value="" disabled selected>Growth Rate</option>
+              <option value="10%">10</option>
+              <option value="20%">20</option>
+              <option value="30%">30</option>
             </select>
           </div>
         </div>
-        <div className="flex">
-          <div>
+        <div className="flex items-center md:items-end flex-col md:flex-row ">
+          <div className="mb-3 md:mr-10 w-screen md:w-fit px-5 md:px-0">
             <p>Pokemon Type</p>
-            <input type="text" className="bg-white" />
+            <input
+              type="text"
+              className="bg-white text-black w-full md:w-[200px] rounded-md h-9 px-3"
+            />
           </div>
-          <select name="regional" id="regional" className="bg-white text-black">
-            <option value="1">Asia</option>
-            <option value="2">Eroupe</option>
-            <option value="3">America</option>
-            <option value="4">Africa</option>
-          </select>
-          <select name="color" id="color" className="bg-white text-black">
-            <option value="1">White</option>
-            <option value="2">Yellow</option>
-            <option value="3">Blue</option>
-            <option value="4">Red</option>
-          </select>
+          <div className="w-screen md:w-[200px] px-5 md:px-0">
+            <select
+              name="regional"
+              id="regional"
+              placeholder="Generation Type"
+              className="bg-white text-black rounded-md h-9 px-3 mb-3  md:mr-10 w-full"
+            >
+              <option value="" disabled selected>Regional</option>
+              <option value="1">Asia</option>
+              <option value="2">Europe</option>
+              <option value="3">America</option>
+              <option value="3">Africa</option>
+              <option value="3">Australia</option>
+            </select>
+          </div>
+          <div className="w-screen md:w-[200px] px-5 md:px-0 md:ml-10">
+            <select
+              name="color"
+              id="color"
+              className="bg-white text-black rounded-md h-9 px-3 mb-3  md:mr-10 w-full"
+            >
+              <option value="" disabled selected>Color</option>
+              <option value="10%">White</option>
+              <option value="20%">Yellow</option>
+              <option value="30%">Black</option>
+              <option value="30%">Blue</option>
+            </select>
+          </div>
         </div>
       </div>
-      <button className="px-3 py-2 bg-white rounded text-black ">Search</button>
+      <button className="px-3 py-2 bg-white hover:bg-[#3A8891] text-[#3A8891] hover:text-white hover:border-[1px] hover:border-white rounded-3xl mt-4 w-32 flex items-center justify-center lg:mt-0">Search <span className="ml-1"><ArrowIcon/></span></button>
     </div>
   );
 };
