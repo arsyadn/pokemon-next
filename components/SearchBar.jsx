@@ -4,7 +4,7 @@ import {IoIosArrowDropright as ArrowIcon} from "react-icons/io"
 const SearchBar = () => {
   return (
     <div className="bg-[#3A8891] text-white w-full flex justify-center items-center py-6 px-10 flex-col lg:flex-row">
-      <div className="flex flex-col md:mr-10">
+      <div className="flex flex-col lg:mr-10">
         <div className="flex items-center md:items-end flex-col md:flex-row ">
           <div className="mb-3 md:mr-10 w-screen md:w-fit px-5 md:px-0">
             <p>Nama</p>
@@ -77,7 +77,7 @@ const SearchBar = () => {
           </div>
         </div>
       </div>
-      <button className="px-3 py-2 bg-white hover:bg-[#3A8891] text-[#3A8891] hover:text-white hover:border-[1px] hover:border-white rounded-3xl mt-4 w-32 flex items-center justify-center lg:mt-0">Search <span className="ml-1"><ArrowIcon/></span></button>
+      <button className="px-3 py-2 bg-white hover:bg-[#3A8891] text-[#3A8891] hover:text-white border-[1px] border-white rounded-md md:rounded-3xl mt-4 w-full max-w-[700px] lg:w-32 flex items-center justify-center lg:mt-0">Search <span className="ml-1"><ArrowIcon/></span></button>
     </div>
   );
 };
