@@ -16,11 +16,12 @@ const SearchBar = () => {
           </div>
           <div className="w-screen md:w-48 lg:w-[250px] px-5 md:px-0 md:mr-16 lg:mr-12 xl:mr-16">
             <select
+              defaultValue={'DEFAULT'}
               name="generation"
               id="generation"
               className="bg-white text-black rounded-md h-9 px-3 mb-3  w-full "
             >
-              <option value="" disabled selected>Generation Type</option>
+              <option value="DEFAULT" disabled>Generation Type</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -28,11 +29,12 @@ const SearchBar = () => {
           </div>
           <div className="w-screen md:w-48 lg:w-[250px] px-5 md:px-0 ">
             <select
+              defaultValue={'DEFAULT'}
               name="growth"
               id="growth"
               className="bg-white text-black rounded-md h-9 px-3 mb-3  md:mr-0 xl:mr-16 w-full"
             >
-              <option value="" disabled selected>Growth Rate</option>
+              <option value="DEFAULT" disabled>Growth Rate</option>
               <option value="10%">10</option>
               <option value="20%">20</option>
               <option value="30%">30</option>
@@ -49,12 +51,13 @@ const SearchBar = () => {
           </div>
           <div className="w-screen md:w-48 lg:w-[250px] px-5 md:px-0 md:mr-16 lg:mr-12 xl:mr-16 ">
             <select
+              defaultValue={'DEFAULT'}
               name="regional"
               id="regional"
               placeholder="Generation Type"
               className="bg-white text-black rounded-md h-9 px-3 mb-3  w-full"
             >
-              <option value="" disabled selected>Regional</option>
+              <option value="DEFAULT" disabled>Regional</option>
               <option value="1">Asia</option>
               <option value="2">Europe</option>
               <option value="3">America</option>
@@ -64,11 +67,12 @@ const SearchBar = () => {
           </div>
           <div className="w-screen md:w-48 lg:w-[250px] px-5 md:px-0">
             <select
+              defaultValue={'DEFAULT'}
               name="color"
               id="color"
               className="bg-white text-black rounded-md h-9 px-3 mb-3  w-full"
             >
-              <option value="" disabled selected>Color</option>
+              <option value="DEFAULT" disabled>Color</option>
               <option value="10%">White</option>
               <option value="20%">Yellow</option>
               <option value="30%">Black</option>
